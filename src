@@ -1,0 +1,40 @@
+def mostrar_tabuleiro(tabuleiro):
+    for linha in tabuleiro:
+        print("".join(linha))
+        print("-" *5)
+
+
+def verificar_vencedor (tabuleiro, jogador):
+    for linha in tabuleiro:
+    if all([s jogador for s in linha]):
+        return True
+    for col in range(3):
+        if all([linha [col] = jogador for linha in tabuleiro]):
+            return True
+    if tabuleiro[0][0] == tabuleiro[1][1] == tabuleiro[2][2] == jogador: 
+       return True
+    if tabuleiro[0][2] == tabuleiro[1][1] == tabuleiro[2][0] == jogador:
+        return True
+    return False
+
+
+def jogo_da_velha():
+    tabuleiro = [["" for in range(3)] for in range(3)]
+    jogador_atual = "X"
+    for in range(9):
+       mostrar tabuleiro(tabuleiro)
+       linha = int(input(f"Jogador (jogador_atual), escolha a linha (0, 1, 2): "))
+       coluna = int(input(f"Jogador (jogador_atual), escolha a coluna (0, 1, 2):")) 
+       if tabuleiro[linha] [coluna] == "";
+           tabuleiro[linha] [coluna] = jogador_atual
+           if verificar_vencedor (tabuleiro, jogador_atual):
+              mostrar_tabuleiro(tabuleiro)
+              print("Jogador (jogador_atual) venceu!")
+              return
+           jogador_atual = "0" if jogador_atual == "X" else "X"
+       else:
+           print("Posição já ocupada. Tente novamente.")
+   mostrar_tabuleiro(tabuleiro)
+   print("Empate!")
+
+jogo_da_velha()
