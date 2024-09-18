@@ -1,0 +1,12 @@
+Jogo da Velha
+Descrição
+O Jogo da Velha é um clássico jogo de tabuleiro para dois jogadores. Este projeto implementa o jogo em Python, onde dois jogadores podem jogar alternadamente em um tabuleiro 3x3. O objetivo é ser o primeiro a alinhar três símbolos iguais (X ou O) na horizontal, vertical ou diagonal. O jogo é jogado no terminal e utiliza lógica de programação simples com listas, loops e funções.
+
+Funcionalidades
+Interface em terminal simples.
+Tabuleiro 3x3 interativo.
+Alternância automática entre dois jogadores.
+Verificação de vitória ou empate.
+Regras fáceis e intuitivas para iniciar a partida.
+Tecnologias Utilizadas
+Python 3.x
