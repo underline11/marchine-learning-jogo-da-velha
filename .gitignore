@@ -5,10 +5,33 @@ __pycache__/
 # Configurações do ambiente virtual
 .env/
 .venv/
+env/
+venv/
 
 # Arquivos do editor de código
 .vscode/
 .idea/
 
-# Logs
+# Arquivos de configuração do Python
+*.pyo
+*.pyd
+
+# Arquivos de log
 *.log
+
+# Arquivos de teste
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+*.tox/
+
+# Arquivos temporários
+*.tmp
+*.swp
+*.swo
+
+# Diretórios de build
+build/
+dist/
+*.egg-info/
